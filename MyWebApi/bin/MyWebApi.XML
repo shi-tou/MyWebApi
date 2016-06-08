@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyWebApi</name>
+    </assembly>
+    <members>
+        <member name="T:MyWebApi.Common.CustomExceptionFilterAttribute">
+            <summary>
+            自定义异常过滤器
+            </summary>
+        </member>
+        <member name="M:MyWebApi.Common.Utils.SaveLog(System.String,System.String)">
+            <summary>
+            写日志
+            </summary>
+            <param name="strTitle"></param>
+            <param name="strContent"></param>
+        </member>
+        <member name="M:MyWebApi.Common.Utils.GetConfig(System.String)">
+            <summary>
+            获取配置文件的值
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MyWebApi.Controllers.UserController">
+            <summary>
+            用户信息管理
+            </summary>
+        </member>
+        <member name="M:MyWebApi.Controllers.UserController.List">
+            <summary>
+            获取用户列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MyWebApi.Controllers.UserController.Detail(System.Int32)">
+            <summary>
+            获取指定ID的用户信息
+            </summary>
+            <param name="id">用户ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyWebApi.Controllers.UserController.Add(MyWebApi.Models.UserModel)">
+            <summary>
+            添加用户
+            </summary>
+            <param name="model">用户信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyWebApi.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            删除用户
+            </summary>
+            <param name="id">用户ID</param>
+        </member>
+        <member name="T:MyWebApi.Models.UserModel">
+            <summary>
+            用户基本信息
+            </summary>
+        </member>
+        <member name="F:MyWebApi.Models.UserModel.UserID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="F:MyWebApi.Models.UserModel.Name">
+            <summary>
+            用户姓名
+            </summary>
+        </member>
+        <member name="F:MyWebApi.Models.UserModel.Sex">
+            <summary>
+            用户性别
+            </summary>
+        </member>
+    </members>
+</doc>
