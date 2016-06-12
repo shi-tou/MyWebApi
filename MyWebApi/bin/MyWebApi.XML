@@ -9,6 +9,41 @@
             自定义异常过滤器
             </summary>
         </member>
+        <member name="T:MyWebApi.Common.AuthAttribute">
+            <summary>
+            自定义日志过滤器
+            </summary>
+        </member>
+        <member name="M:MyWebApi.Common.AuthAttribute.IsAuthorized(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            授权验证的逻辑处理，返回true的则是通过授权，返回了false则不是
+            </summary>
+            <param name="actionContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyWebApi.Common.AuthAttribute.HandleUnauthorizedRequest(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            处理授权失败的事情。
+            </summary>
+            <param name="actionContext"></param>
+        </member>
+        <member name="T:MyWebApi.Common.LogAttribute">
+            <summary>
+            自定义日志过滤器
+            </summary>
+        </member>
+        <member name="M:MyWebApi.Common.LogAttribute.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            执行Action之前
+            </summary>
+            <param name="actionContext"></param>
+        </member>
+        <member name="M:MyWebApi.Common.LogAttribute.OnActionExecuted(System.Web.Http.Filters.HttpActionExecutedContext)">
+            <summary>
+            执行Action之后
+            </summary>
+            <param name="actionExecutedContext"></param>
+        </member>
         <member name="M:MyWebApi.Common.Utils.SaveLog(System.String,System.String)">
             <summary>
             写日志

@@ -15,7 +15,6 @@ namespace MyWebApi.Common
         public override void OnException(HttpActionExecutedContext actionExecutedContext)
         {
             Utils.SaveLog("Exception", actionExecutedContext.Exception.ToString());
-            base.OnException(actionExecutedContext);
         }
     }
 }

@@ -141,6 +141,7 @@
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Common\CustomExceptionFilterAttribute.cs" />
+    <Compile Include="Common\AuthAttribute.cs" />
     <Compile Include="Common\LogAttribute.cs" />
     <Compile Include="Common\Utils.cs" />
     <Compile Include="Controllers\UserController.cs" />

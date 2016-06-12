@@ -1,4 +1,5 @@
-﻿using MyWebApi.Models;
+﻿using MyWebApi.Common;
+using MyWebApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,7 @@ namespace MyWebApi.Controllers
         /// </summary>
         /// <returns></returns>
         [Route("List")]
+        [LogAttribute(Message = "获取用户列表")]
         [HttpGet]
         public List<UserModel> List()
         {
@@ -36,6 +38,7 @@ namespace MyWebApi.Controllers
         /// <param name="id">用户ID</param>
         /// <returns></returns>
         [Route("Detail")]
+        [LogAttribute(Message = "获取指定ID的用户信息")]
         [HttpGet]
         public UserModel Detail(int id)
         {
@@ -48,6 +51,7 @@ namespace MyWebApi.Controllers
         /// <param name="model">用户信息</param>
         /// <returns></returns>
         [Route("Add")]
+        [LogAttribute(Message = "添加用户")]
         [HttpPost]
         public List<UserModel> Add(UserModel model)
         {
@@ -60,10 +64,12 @@ namespace MyWebApi.Controllers
         /// </summary>
         /// <param name="id">用户ID</param>
         [Route("Delete")]
+        [LogAttribute(Message = "删除用户")]
         [HttpPost]
         public List<UserModel> Delete(int id)
         {
             return UserList.Where(u => u.UserID != id).ToList();
         }
+
     }
 }
