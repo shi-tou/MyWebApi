@@ -15,4 +15,4 @@ private static string GetXmlCommentsPath(string name)
 设置输出xml文档文件：
 项目属性->生成-输出->勾上XML文档文件
 
-浏览器访问：http://<yourhostname>.com/swagger/ui/index
+浏览器访问：http://yourhostname.com/swagger/ui/index
